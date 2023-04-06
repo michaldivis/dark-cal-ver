@@ -1,9 +1,37 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
 	<Nullable>enable</Nullable>
 	<ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+	<PropertyGroup>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageId>Divis.DarkCalVer</PackageId>
+		<Version>0.0.0</Version>
+		<Authors>michaldivis</Authors>
+		<Company>Michal Diviš</Company>
+		<Product>Dark CalVer</Product>
+		<Description>Simple C# implementation of the CalVer versioning scheme.</Description>
+		<PackageProjectUrl>https://github.com/michaldivis/dark-random-utils</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/michaldivis/dark-random-utils</RepositoryUrl>
+		<PackageTags>calver, versioning</PackageTags>
+		<NeutralLanguage>en</NeutralLanguage>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\assets\icon.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
 </Project>
